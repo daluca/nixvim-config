@@ -1,0 +1,3 @@
+{
+  typos.enable = true;
+}

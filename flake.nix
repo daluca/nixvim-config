@@ -35,7 +35,8 @@
       let
         nixvim' = nixvim.legacyPackages.${system};
       in {
-        default = nixvim'.makeNixvim ./config;
+        default = self.packages.${system}.neovim;
+        neovim = nixvim'.makeNixvim [ ./config ./plugins ./ftplugin ];
       }
     );
 

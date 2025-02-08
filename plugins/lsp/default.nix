@@ -1,6 +1,7 @@
 {
   imports = [
     ./nixd
+    ./lua_ls
   ];
 
   plugins.lsp = {

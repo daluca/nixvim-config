@@ -6,6 +6,7 @@
     ./telescope
     ./which-key
     ./treesitter
+    ./fugitive
     ./lazygit
   ];
 }

@@ -5,5 +5,6 @@
     ./lualine
     ./telescope
     ./which-key
+    ./treesitter
   ];
 }

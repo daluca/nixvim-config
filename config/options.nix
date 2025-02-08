@@ -10,5 +10,6 @@
     smartindent = true;
     ignorecase = true;
     smartcase = true;
+    undofile = true;
   };
 }

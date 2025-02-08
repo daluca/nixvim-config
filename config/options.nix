@@ -8,5 +8,7 @@
     expandtab = true;
     cursorline = true;
     smartindent = true;
+    ignorecase = true;
+    smartcase = true;
   };
 }

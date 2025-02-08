@@ -1,4 +1,12 @@
 {
-  plugins.gitsigns.enable = true;
+  plugins.gitsigns = {
+    enable = true;
+    settings = {
+      current_line_blame = true;
+      current_line_blame_opts = {
+        delay = 200;
+      };
+    };
+  };
   opts.signcolumn = "yes";
 }

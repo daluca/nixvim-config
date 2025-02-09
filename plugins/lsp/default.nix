@@ -1,8 +1,8 @@
 {
   imports = [
-    ./nixd
-    ./lua_ls
-    ./bashls
+    ./bash
+    ./lua
+    ./nix
   ];
 
   plugins.lsp = {

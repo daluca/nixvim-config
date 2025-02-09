@@ -3,6 +3,7 @@
     ./bash
     ./lua
     ./nix
+    ./yaml
   ];
 
   plugins.lsp = {

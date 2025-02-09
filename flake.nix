@@ -44,12 +44,14 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
         pre-commit = self.checks.${system}.pre-commit;
+        neovim = self.packages.${system}.neovim;
       in {
         default = pkgs.mkShell {
           inherit (pre-commit) shellHook;
           name = "nixvim-config";
           buildInputs = with pkgs; [
             just
+            neovim
           ] ++ pre-commit.enabledPackages;
           JUST_COMMAND_COLOR = "blue";
         };

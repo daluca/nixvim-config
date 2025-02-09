@@ -1,12 +1,13 @@
 {
   imports = [
+    ./cmp
+    ./fugitive
     ./gitsigns
+    ./lazygit
     ./lsp
     ./lualine
     ./telescope
-    ./which-key
     ./treesitter
-    ./fugitive
-    ./lazygit
+    ./which-key
   ];
 }

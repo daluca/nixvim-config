@@ -1,6 +1,7 @@
 {
   imports = [
     ./bash
+    ./helm
     ./lua
     ./nix
     ./yaml

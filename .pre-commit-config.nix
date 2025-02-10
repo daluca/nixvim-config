@@ -1,3 +1,6 @@
 {
-  typos.enable = true;
+  typos = {
+    enable = true;
+    settings.configPath = "typos.toml";
+  };
 }

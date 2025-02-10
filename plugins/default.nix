@@ -1,5 +1,6 @@
 {
   imports = [
+    ./autopairs
     ./cmp
     ./fugitive
     ./gitsigns

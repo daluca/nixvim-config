@@ -21,7 +21,7 @@
         "<C-f>" = /* lua */ "cmp.mapping.scroll_docs(4)";
         "<C-Space>" = /* lua */ "cmp.mapping.complete()";
         "<C-e>" = /* lua */ "cmp.mapping.abort()";
-        "<CR>" = /* lua */ "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = false })";
+        "<CR>" = /* lua */ "cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Replace, select = true })";
       };
     };
   };

@@ -33,6 +33,12 @@
         name = "buffer";
       }];
     };
+    "?" = {
+      mapping.__raw = /* lua */ "cmp.mapping.preset.cmdline()";
+      sources = [{
+        name = "buffer";
+      }];
+    };
     ":" = {
       mapping.__raw = /* lua */ "cmp.mapping.preset.cmdline()";
       sources = [

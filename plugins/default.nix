@@ -9,6 +9,7 @@
     ./lualine
     ./noice # spellchecker:disable-line
     ./telescope
+    ./toggleterm
     ./treesitter
     ./which-key
   ];

@@ -42,9 +42,9 @@
 
     devShells = forAllSystems (system:
       let
+        inherit (self.checks.${system}) pre-commit;
+        inherit (self.packages.${system}) neovim;
         pkgs = nixpkgs.legacyPackages.${system};
-        pre-commit = self.checks.${system}.pre-commit;
-        neovim = self.packages.${system}.neovim;
       in {
         default = pkgs.mkShell {
           inherit (pre-commit) shellHook;

@@ -4,6 +4,7 @@
     ./helm
     ./lua
     ./nix
+    ./rust
     ./yaml
   ];
 

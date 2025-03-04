@@ -8,10 +8,13 @@
       formatting.command = ["nixfmt"];
       options = rec {
         nixos = {
-          expr = /* nix */ "(builtins.getFlake (\"git+file://\" + toString ./.)).nixosConfigurations.artemis.options";
+          expr = /* nix */ "(builtins.getFlake \"github:daluca/nix-config\").nixosConfigurations.artemis.options";
         };
-        home_manager = {
+        home-manager = {
           expr = nixos.expr + /* nix */ ".home-manager.users.type.getSubOptions []";
+        };
+        nixvim = {
+          expr = /* nix */ "(builtins.getFlake \"github:daluca/nixvim-config\").packages.x86_64-linux.neovim.options";
         };
       };
     };

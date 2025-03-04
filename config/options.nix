@@ -12,6 +12,4 @@
     smartcase = true;
     undofile = true;
   };
-
-  vimAlias = true;
 }

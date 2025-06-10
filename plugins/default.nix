@@ -8,6 +8,7 @@
     ./lsp
     ./lualine
     ./noice # spellchecker:disable-line
+    ./render-markdown
     ./telescope
     ./todo-comments
     ./toggleterm

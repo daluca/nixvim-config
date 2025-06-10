@@ -2,6 +2,7 @@
   imports = [
     ./autopairs
     ./cmp
+    ./colorizer
     ./fugitive
     ./gitsigns
     ./lazygit

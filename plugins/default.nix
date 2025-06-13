@@ -16,5 +16,6 @@
     ./toggleterm
     ./treesitter
     ./which-key
+    ./yazi
   ];
 }

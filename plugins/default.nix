@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ansible-vim
     ./autopairs
     ./cmp
     ./colorizer

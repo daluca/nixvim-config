@@ -1,7 +1,7 @@
 {
   imports = [
-    ./options.nix
-    ./globals.nix
     ./colour-scheme.nix
+    ./globals.nix
+    ./options.nix
   ];
 }

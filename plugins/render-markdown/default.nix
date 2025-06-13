@@ -1,3 +1,8 @@
 {
-  plugins.render-markdown.enable = true;
+  plugins.render-markdown = {
+    enable = true;
+    settings = {
+      latex.enabled = false;
+    };
+  };
 }

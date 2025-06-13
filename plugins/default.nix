@@ -15,6 +15,7 @@
     ./todo-comments
     ./toggleterm
     ./treesitter
+    ./url-open
     ./which-key
     ./yazi
   ];

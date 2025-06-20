@@ -6,6 +6,7 @@
     ./lua
     ./nix
     ./rust
+    ./typos
     ./yaml
   ];
 

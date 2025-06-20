@@ -5,6 +5,7 @@
     ./helm
     ./lua
     ./nix
+    ./python
     ./rust
     ./typos
     ./yaml

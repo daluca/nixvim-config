@@ -2,7 +2,7 @@
   description = "nixvim personal config";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
     nixvim.url = "github:nix-community/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
@@ -48,7 +48,7 @@
         default = pkgs.mkShell {
           inherit (pre-commit) shellHook;
           name = "nixvim-config";
-          buildInputs = with pkgs; [
+          packages = with pkgs; [
             just
             neovim
           ] ++ pre-commit.enabledPackages;

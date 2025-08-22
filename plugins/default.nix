@@ -16,6 +16,7 @@
     ./toggleterm
     ./treesitter
     ./trouble
+    ./undotree
     ./url-open
     ./which-key
     ./yazi

@@ -48,10 +48,10 @@
         default = pkgs.mkShell {
           inherit (pre-commit) shellHook;
           name = "nixvim-config";
-          packages = with pkgs; [
+          packages = with pkgs; pre-commit.enabledPackages ++ [
             just
             neovim
-          ] ++ pre-commit.enabledPackages;
+          ];
           JUST_COMMAND_COLOR = "blue";
         };
       }

@@ -1,6 +1,5 @@
 {
   imports = [
-    ./ansible
     ./bash
     ./helm
     ./lua

@@ -32,18 +32,34 @@
 
     packages = forAllSystems (system:
       let
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = builtins.attrValues self.overlays;
+        };
         nixvim' = nixvim.legacyPackages.${system};
-      in {
+      in (
+        import ./pkgs { inherit pkgs; }
+      ) // {
         default = self.packages.${system}.neovim;
-        neovim = nixvim'.makeNixvim [ ./config ./plugins ./ftplugin ];
+        neovim = nixvim'.makeNixvimWithModule {
+          inherit pkgs;
+          module = [ ./config ./plugins ./ftplugin ];
+        };
       }
     );
+
+    overlays = {
+      additions = final: _prev: import ./pkgs { pkgs = final; };
+    };
 
     devShells = forAllSystems (system:
       let
         inherit (self.checks.${system}) pre-commit;
         inherit (self.packages.${system}) neovim;
-        pkgs = nixpkgs.legacyPackages.${system};
+        pkgs = import nixpkgs {
+          inherit system;
+          overlays = builtins.attrValues self.overlays;
+        };
       in {
         default = pkgs.mkShell {
           inherit (pre-commit) shellHook;

@@ -2,6 +2,7 @@
   imports = [
     ./ansible
     ./bash
+    ./docker-compose
     ./helm
     ./lua
     ./nix

@@ -18,6 +18,7 @@
     pattern = [
       "configure_*.y{,a}ml"
       "*/pre_tasks/*.y{,a}ml"
+      "*/post_tasks/*.y{,a}ml"
       "*/playbooks/*.y{,a}ml"
     ];
   }];

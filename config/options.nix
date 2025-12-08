@@ -12,4 +12,6 @@
     smartcase = true;
     undofile = true;
   };
+
+  clipboard.register = "unnamedplus";
 }
